@@ -50,12 +50,12 @@ octave gen_laplacian.m --no-gui
 - Masks with the same color is in the same group.
 - Now you have two ways to run the program.  
 
-__1. Quick Run__. You will get all final results in `examples/final_results`. The program will generate a result for every 100 iterations.
+- __Quick Run__. You will get all final results in `examples/final_results`. The program will generate a result for every 100 iterations.
 ```
 python gen_all.py
 ```
 
-__2. Run Individually__. You can also use the following two commands to operate with every single image.  
+- __Run Individually__. You can also use the following two commands to operate with every single image.  
   Run the following command to get painterly style transfer.  
   ```
   th neuralstyle_seg.lua -content_image <input> -style_image <style> -content_seg <inputMask> -style_seg <styleMask> -index <id> -serial <intermediate_folder>
