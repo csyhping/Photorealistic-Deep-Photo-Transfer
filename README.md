@@ -64,6 +64,7 @@ __2. Run Individually__. You can also use the following two commands to operate 
   ```
   th deepmatting_seg.lua -content_image <input> -style_image <style> -content_seg <inputMask> -style_seg <styleMask> -index <id> -init_image <intermediate_folder/out<id>_t_1000.png> -serial <final_folder> -f_radius 15 -f_edge 0.01
   ```  
+  
 - This demo has been implemented successfully on GTX 1080 Ti.  
 
 ### Image segmentation
