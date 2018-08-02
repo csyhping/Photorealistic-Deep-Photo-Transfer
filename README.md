@@ -50,20 +50,20 @@ octave gen_laplacian.m --no-gui
 - Masks with the same color is in the same group.
 - Now you have two ways to run the program.  
 
-- __Quick Run__. You will get all final results in `examples/final_results`. The program will generate a result for every 100 iterations.
+- __Quick Run__. You will get all final results in `examples/final_results`. The program will generate a result for every 100 iterations.  
 ```
 python gen_all.py
 ```
 
 - __Run Individually__. You can also use the following two commands to operate with every single image.  
-  Run the following command to get painterly style transfer.  
-  ```
-  th neuralstyle_seg.lua -content_image <input> -style_image <style> -content_seg <inputMask> -style_seg <styleMask> -index <id> -serial <intermediate_folder>
-  ```  
-  Then run the following command to get final photorealistic style transfer.  
-  ```
-  th deepmatting_seg.lua -content_image <input> -style_image <style> -content_seg <inputMask> -style_seg <styleMask> -index <id> -init_image <intermediate_folder/out<id>_t_1000.png> -serial <final_folder> -f_radius 15 -f_edge 0.01
-  ```  
+- Run the following command to get painterly style transfer.  
+```
+th neuralstyle_seg.lua -content_image <input> -style_image <style> -content_seg <inputMask> -style_seg <styleMask> -index <id> -serial <intermediate_folder>
+```  
+- Then run the following command to get final photorealistic style transfer.  
+```
+th deepmatting_seg.lua -content_image <input> -style_image <style> -content_seg <inputMask> -style_seg <styleMask> -index <id> -init_image <intermediate_folder/out<id>_t_1000.png> -serial <final_folder> -f_radius 15 -f_edge 0.01
+```  
   
 - This demo has been implemented successfully on GTX 1080 Ti.  
 
