@@ -41,7 +41,7 @@ make clean && make
 
 - Please make sure the all png images has longer side less than 700px, [resize_images.py](resize_images.py) will help to do that.
 
-- Generate laplacian matrix (This step takes really long time, Matlab is much faster). The output matrix will have the following name     format, `gen_laplacian/Input_Laplacian_3x3_1e-7_CSR<id>.mat`.
+- Generate laplacian matrix (This step takes really long time, Matlab is much faster). The output matrix will have the following name     format, `gen_laplacian/Input_Laplacian_3x3_1e-7_CSR<id>.mat`. You may have to change the __N__ parameter in `gen_laplacian.m` according to the number of you input images.
 ```
 cd gen_laplacian;
 octave gen_laplacian.m --no-gui
