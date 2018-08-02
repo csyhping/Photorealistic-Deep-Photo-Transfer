@@ -53,7 +53,7 @@ octave gen_laplacian.m --no-gui
   __Quick Run__. You will get all final results in `examples/final_results`. The program will generate a result for every 100 iterations.  
 ```
 python gen_all.py
-```
+```  
 
   __Run Individually__. You can also use the following two commands to operate with every single image.  
 - Run the following command to get painterly style transfer.  
