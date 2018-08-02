@@ -54,9 +54,7 @@ octave gen_laplacian.m --no-gui
 ```
 python gen_all.py
 ```  
-
-  __Run Individually__. You can also use the following two commands to operate with every single image.  
-- Run the following command to get painterly style transfer.  
+   __Run Individually__. You can also use the following two commands to operate with every single image. Run the following command to get painterly style transfer.  
 ```
 th neuralstyle_seg.lua -content_image <input> -style_image <style> -content_seg <inputMask> -style_seg <styleMask> -index <id> -serial <intermediate_folder>
 ```  
